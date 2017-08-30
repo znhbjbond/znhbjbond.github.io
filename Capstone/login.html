@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Andy Feng">
+  <title>SETAS Capstone</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/signin.css"></head>
+
+<body >
+  <div class="container">
+
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me">Remember me</label>
+      </div>
+      <button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+    </form>
+    <!-- login form end -->
+
+    <div class="btn-group fakeButton" role="group" aria-label="...">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="employer-submit.html" class="btn btn-default"> <i class="glyphicon glyphicon-user"></i>
+            Employer User</a>
+          <a href="student-apply.html" class="btn btn-default">  <i class="glyphicon glyphicon-user"></i>
+            Student User</a>
+          <a href="admin-proposal.html" class="btn btn-default"> 
+            <i class="glyphicon glyphicon-user"></i>
+            Admin User</a>
+        </div>
+      </div>
+    </div>
+    <!-- fake user end --> </div>
+  <!-- /container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    var rules = {rules:{
+      applicantName: "required",
+      email: {
+        required: true, email: true
+      }
+    }
+  };
+  $('#submit').validate(rules);
+})
+</script>
+</body>
+</html>

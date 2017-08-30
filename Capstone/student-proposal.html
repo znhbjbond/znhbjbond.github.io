@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Andy Feng">
+  <title>SETAS Capstone - Student - Apply</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'></head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/logo.jpg" class="logo-img"></div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <h1>School of Engineering Technology and Applied Science</h1>
+          <h2>Capstone Proposal Management System</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Student form</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="student-apply.html">Apply Proposal</a>
+          </li>
+          <li class="active">
+            <a href="student-proposal.html">View Proposals</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> </div>
+  </nav>
+
+  <section>
+    <div class="container">
+
+      <div class="btn-group pull-right" id="buttonGroup" role="group" aria-label="...">
+        <a class="btn btn-default"  data-toggle="modal" data-target="#myModal"> <i class="glyphicon glyphicon-pencil"></i>
+          View
+        </a>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Proposal Details</h4>
+              </div>
+              <div class="modal-body">
+                <form id="submit">
+                  <h3 class="page-header">Introduction</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod egestas velit eget malesuada. Quisque tempor, lectus a laoreet scelerisque, lectus augue pulvinar nulla, in ultrices odio mauris in urna. Sed in aliquam dolor, a vestibulum ante. Sed sit amet blandit eros. Fusce et turpis nibh. Curabitur finibus, nibh eu iaculis accumsan, risus odio pharetra ante, eget congue elit nibh vel purus. Integer sed aliquam tortor, et dapibus mi. Fusce mollis enim eu lacus hendrerit, vitae faucibus nisl viverra. Nam posuere eget erat vitae congue. Fusce vel condimentum arcu, quis porta odio.
+                  </p>
+
+                  <h3 class="page-header">Proposal</h3>
+                  <textarea name="txtProposal" id="txtProposal" cols="30" rows="10" class="col-md-12 col-sm-12 col-xs-12"></textarea>
+                  <span>Attachment</span>
+                  <input type="file">
+
+                  <h3 class="page-header">Contact Information</h3>
+                  <div class="row">
+                    <div class="form-group col-md-4">
+                      <label for="exampleInputPassword1">Company Name</label>
+                      <input type="text" name="companyName" id="companyName" class="form-control required" ></div>
+                    <div class="form-group col-md-4">
+                      <label>Website</label>
+                      <input type="text" name="website" id="website" class="form-control"></div>
+                    <div class="form-group col-md-4">
+                      <label>Project Location</label>
+                      <input type="text" id="projectLocation" name="projectLocation" class="form-control"></div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-md-4">
+                      <label for="exampleInputPassword1">Applicant Name</label>
+                      <input type="text" name="applicantName" id="applicantName" class="form-control"></div>
+                    <div class="form-group col-md-4">
+                      <label>Phone Number</label>
+                      <input type="text" id="phoneNumber" name="phoneNumber" class="form-control"></div>
+                    <div class="form-group col-md-4">
+                      <label>Email</label>
+                      <input type="email" id="email" name="email" class="form-control"></div>
+                  </div>
+
+                  <h3 class="page-header">Program Information</h3>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="dropdown">
+                        Coop Semester
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Please select semester
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li>
+                            <a href="#">Fall, 2015 (September, 2015 - December, 2015)</a>
+                          </li>
+                          <li>
+                            <a href="#">Winter, 2016 (January, 2016 - April, 2016)</a>
+                          </li>
+                          <li>
+                            <a href="#">Summer, 2016 (May, 2016 - August, 2016)</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 class="well">Advanced Manufacturing &amp; Automation Technology (AMAT)</h4>
+
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Eletro-Mechanical Engineering Technology - Automation &amp; Robotics
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Energy Systems Engineering Technology
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Mechnical Engineering Technology - Design
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Mechnical Engineering Technology - Industrial
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 class="well">
+                      Information &amp; Communication Engineering Technology (ICET)
+                    </h4>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Bachelor of Applied Information Sciences - Computer and Communication Networks
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Biomedical Engineering Technology
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Computer Systems Technology - Networking
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Electronics Engineering Technology
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Software Engineering Technology
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Software Engineering Technology - Interactive Gaming
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 class="well">Applied Biological and Environmental Science (ABES)</h4>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Architectural Technology
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Enrironmental Technology
+                    </div>
+                    <div>
+                      <input type="checkbox" value=""/>
+                      Food Science Technology
+                    </div>
+                  </div>
+
+                  <h3 class="page-header">Cost to Company</h3>
+                  <div class="form-inline">
+                    <div class="form-group">
+                      <label>Number of Students</label>
+                      <input type="text" class="form-control"></div>
+                    <div class="form-group">
+                      <label>Cost Per Student</label>
+                      <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="email" class="form-control"></div>
+                    </div>
+                    <h4 class="form-group"> <strong>$580 / month</strong>
+                    </h4>
+                  </div>
+
+                  <h3 class="page-header">Agreement</h3>
+                  <p>
+                    Cras elementum blandit pellentesque. Donec condimentum nunc sed felis luctus rhoncus. Etiam sagittis luctus egestas. Vestibulum egestas, nunc vitae maximus commodo, purus nisi convallis magna, eu posuere sem urna ac est. Maecenas a aliquam risus, vitae hendrerit ex. Nulla tempor sed sapien ut lobortis. Nam ut justo sit amet tellus vestibulum bibendum. Sed feugiat odio in mauris sagittis, vitae egestas dui cursus. Sed non placerat odio, sit amet sollicitudin nisl. Sed feugiat laoreet leo, ac pharetra nulla suscipit condimentum. Proin sit amet arcu leo. Duis malesuada viverra tincidunt.
+                  </p>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Apply Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal end -->
+        <a href="student-apply.html" class="btn btn-default"> <i class="glyphicon glyphicon-plus"></i>
+          Apply
+        </a>
+      </div>
+      <!-- button group end -->
+
+      <div class="row">
+        <div class="col-xs-12">
+          <table class="table table-striped">
+            <div class="row">
+              <tr>
+                <th class="col-xs-1">
+                  <input type="checkbox"></th>
+                <th class="col-xs-5">Proposal</th>
+                <th class="col-xs-2">Company Name</th>
+                <th class="col-xs-2">Applicant Name</th>
+                <th class="col-xs-2">Submit Date</th>
+              </tr>
+            </div>
+
+            <div class="row">
+              <tr>
+                <td class="col-xs-1">
+                  <input type="checkbox"></td>
+                <td class="col-xs-5">
+                  Integer sed aliquam tortor, et dapibus mi. Fusce mollis enim eu viverra...
+                </td>
+                <td class="col-xs-2">lacus vitae faucibus</td>
+                <td class="col-xs-2">John Smith</td>
+                <td class="col-xs-2">2015-09-21</td>
+              </tr>
+            </div>
+
+            <div class="row">
+              <tr>
+                <td class="col-xs-1">
+                  <input type="checkbox"></td>
+                <td class="col-xs-5">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem ...
+                </td>
+                <td class="col-xs-2">aliquip ex ea</td>
+                <td class="col-xs-2">Andy</td>
+                <td class="col-xs-2">2015-09-20</td>
+              </tr>
+            </div>
+
+            <div class="row">
+              <tr>
+                <td class="col-xs-1">
+                  <input type="checkbox"></td>
+                <td class="col-xs-5">
+                  voluptate velit esse quam nihil molestiae consequatur, vel illum dolorem ...
+                </td>
+                <td class="col-xs-2">efficitur lectus varius</td>
+                <td class="col-xs-2">Lily</td>
+                <td class="col-xs-2">2015-09-11</td>
+              </tr>
+            </div>
+
+            <div class="row">
+              <tr>
+                <td class="col-xs-1">
+                  <input type="checkbox"></td>
+                <td class="col-xs-5">
+                  In id sodales ligula. Proin cursus lorem at dolor porttitor placerat...
+                </td>
+                <td class="col-xs-2">Nullam et ex massa</td>
+                <td class="col-xs-2">Tony</td>
+                <td class="col-xs-2">2015-09-06</td>
+              </tr>
+            </div>
+
+            <div class="row">
+              <tr>
+                <td class="col-xs-1">
+                  <input type="checkbox"></td>
+                <td class="col-xs-5">
+                  Etiam orci metus, feugiat sit amet tempor ac, fringilla ac nibh. Nunc...
+                </td>
+                <td class="col-xs-2">Nullam et ex massa</td>
+                <td class="col-xs-2">James</td>
+                <td class="col-xs-2">2015-09-01</td>
+              </tr>
+            </div>
+
+            <div class="row">
+              <tr>
+                <td class="col-xs-1">
+                  <input type="checkbox"></td>
+                <td class="col-xs-5">
+                  In tincidunt arcu ultricies odio viverra pellentesque. Sed venenatis tortor...
+                </td>
+                <td class="col-xs-2">Praesent eget posuere</td>
+                <td class="col-xs-2">Jane</td>
+                <td class="col-xs-2">2015-08-29</td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+      <!-- proposal list end --> </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <p>
+    2015 Copyright&copy;Shool of Engineering Technology and Applied Science SETAS
+  </p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    var rules = {rules:{
+      applicantName: "required",
+      email: {
+        required: true, email: true
+      }
+    }
+  };
+  $('#submit').validate(rules);
+})
+</script>
+</body>
+</html>

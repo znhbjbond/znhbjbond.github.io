@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Andy Feng">
+  <title>SETAS Capstone - Admin - Manage Proposal</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'></head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/logo.jpg" class="logo-img"></div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <h1>School of Engineering Technology and Applied Science</h1>
+          <h2>Capstone Proposal Management System</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Admin Form</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="admin-proposal.html">Manage Proposal</a>
+          </li>
+          <li class="active">
+            <a href="admin-employer.html">Manage Employer</a>
+          </li>
+          <li>
+            <a href="admin-student.html">Manage Student</a>
+          </li>
+          <li>
+            <a href="admin-program.html">Manage Program</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="btn-group pull-right" role="group" aria-label="...">
+            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-ok-sign"></i>Enable</button>
+            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-remove-sign"></i>Disable</button>
+            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-file"></i>Export</button>
+          </div>
+        </div>
+      </div>
+      <!-- button group end -->
+<br>
+      <div class="row">
+        <table class="table table-striped">
+          <tr>
+            <div class="row">
+              <div class="col-xs-1">
+                <th>
+                  <input type="checkbox"></th>
+              </div>
+              <div class="col-xs-3">
+                <th>Employer Name</th>
+              </div>
+              <div class="col-xs-3">
+                <th>Phone Number</th>
+              </div>
+              <div class="col-xs-3">
+                <th>Email</th>
+              </div>
+              <div class="col-xs-2">
+                <th>Register Date</th>
+              </div>
+            </div>
+          </tr>
+
+          <tr>
+            <div class="row">
+              <div class="col-xs-1">
+                <td>
+                  <input type="checkbox"></td>
+              </div>
+              <div class="col-xs-3">
+                <td>Fenn  Thomas</td>
+              </div>
+              <div class="col-xs-3">
+                <td>416-838-3812</td>
+              </div>
+              <div class="col-xs-3">
+                <td>fennthomas@gmail.com</td>
+              </div>
+              <div class="col-xs-2">
+                <td>2015-08-14</td>
+              </div>
+            </div>
+          </tr>
+
+          <tr>
+            <div class="row">
+              <div class="col-xs-1">
+                <td>
+                  <input type="checkbox"></td>
+              </div>
+              <div class="col-xs-3">
+                <td>Firmin  Rebecca</td>
+              </div>
+              <div class="col-xs-3">
+                <td>905-457-1953</td>
+              </div>
+              <div class="col-xs-3">
+                <td>FirminRebecca@hotmail.com</td>
+              </div>
+              <div class="col-xs-2">
+                <td>2015-08-06</td>
+              </div>
+            </div>
+          </tr>
+
+          <tr>
+            <div class="row">
+              <div class="col-xs-1">
+                <td>
+                  <input type="checkbox"></td>
+              </div>
+              <div class="col-xs-3">
+                <td>John Smith</td>
+              </div>
+              <div class="col-xs-3">
+                <td>647-842-8415</td>
+              </div>
+              <div class="col-xs-3">
+                <td>jsmith@gmail.com</td>
+              </div>
+              <div class="col-xs-2">
+                <td>2015-07-23</td>
+              </div>
+            </div>
+          </tr>
+
+          <tr>
+            <div class="row">
+              <div class="col-xs-1">
+                <td>
+                  <input type="checkbox"></td>
+              </div>
+              <div class="col-xs-3">
+                <td>Fulkin  James</td>
+              </div>
+              <div class="col-xs-3">
+                <td>416-930-0214</td>
+              </div>
+              <div class="col-xs-3">
+                <td>fjames@outlook.com</td>
+              </div>
+              <div class="col-xs-2">
+                <td>2015-07-15</td>
+              </div>
+            </div>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- employer list end --> </section>
+
+  <footer id="footer" class="clearfix">
+    <p>
+      2015 Copyright&copy;Shool of Engineering Technology and Applied Science SETAS
+    </p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript">
+  function submit(){
+    alert("Submit successfully!");
+  }
+  function delete(){
+    confirm("Are you sure to delete the proposal?");
+  }  
+
+</script>
+</body>
+</html>
